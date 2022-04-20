@@ -6,15 +6,15 @@
   
   <title>awvs sqlmap | lzfblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="$\color">
+  <meta name="description" content="安装包：acunetix_13.0.200217097_x64_with crack.zip启动： 1$ systemctl start acunetix.service">
 <meta property="og:type" content="article">
 <meta property="og:title" content="awvs sqlmap">
 <meta property="og:url" content="http://example.com/2022/04/20/awvs-sqlmap/index.html">
 <meta property="og:site_name" content="lzfblog">
-<meta property="og:description" content="$\color">
+<meta property="og:description" content="安装包：acunetix_13.0.200217097_x64_with crack.zip启动： 1$ systemctl start acunetix.service">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-20T11:35:07.000Z">
-<meta property="article:modified_time" content="2022-04-20T11:35:57.543Z">
+<meta property="article:modified_time" content="2022-04-20T11:41:50.591Z">
 <meta property="article:author" content="Jone">
 <meta property="article:tag" content="kali">
 <meta name="twitter:card" content="summary">
@@ -96,7 +96,20 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>$\color</p>
+        <p>安装包：acunetix_13.0.200217097_x64_with crack.zip<br>启动：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl start acunetix.service</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>默认位置：<a target="_blank" rel="noopener" href="https://kali:3443/">https://kali:3443/</a></p>
+<p>启动：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sqlmap 参数</span><br><span class="line">$ sqlmap -u url --xxxx</span><br></pre></td></tr></table></figure>
+<p>爆破数据库：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sqlmap -u url --dbs <span class="comment">#查看所有数据库名;</span></span><br><span class="line">$ sqlmap -u url --current-db <span class="comment">#查看当前所使用的数据库；</span></span><br></pre></td></tr></table></figure>
+<p>爆破数据库表：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sqlmap -u url -D 库名 -tables <span class="comment">#爆破数据库表名；</span></span><br><span class="line">                               <span class="comment"># -D：指定数据库名；</span></span><br><span class="line">                               <span class="comment"># -tables:查看指定数据库下所有表名；</span></span><br></pre></td></tr></table></figure>
+<p>爆破字段：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sqlmap -u url -D 库名 -T 表名  -columns <span class="comment"># 爆破字段名；</span></span><br><span class="line">                                        <span class="comment"># -T：指定表名；</span></span><br><span class="line">                                        <span class="comment"># -columns: 查看指定库表中所有字段；</span></span><br></pre></td></tr></table></figure>
+<p>爆破数据：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sqlmap -u url -D 库名 -T 表名 -C 字段名 -dump <span class="comment"># 爆破指定库表字段里面的所有数据；</span></span><br><span class="line">                                             <span class="comment"># -C:指定字段</span></span><br><span class="line">                                             <span class="comment">#-dump: 爆破字段数据；</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
