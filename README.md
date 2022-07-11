@@ -1,2 +1,1 @@
-# 02_C_QuestionBankofCyberSecurity
-C语言题库(网安院)
+C语言算法及答案
